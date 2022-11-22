@@ -1,4 +1,5 @@
 // Generated from Seraph.g4 by ANTLR 4.7.2
+package org.seraph.syntax;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -228,6 +229,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Seraph(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Seraph(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_SeraphContext oC_Seraph() throws RecognitionException {
@@ -386,6 +392,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOS_S2R(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOS_S2R(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -549,6 +560,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOS_R2S(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOS_R2S(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OS_R2SContext oS_R2S() throws RecognitionException {
@@ -651,6 +667,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOS_StreamOp(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOS_StreamOp(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OS_StreamOpContext oS_StreamOp() throws RecognitionException {
@@ -733,6 +754,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOS_Duration(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOS_Duration(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OS_DurationContext oS_Duration() throws RecognitionException {
@@ -774,6 +800,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOS_Period(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOS_Period(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -833,6 +864,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOS_EventRange(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOS_EventRange(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OS_EventRangeContext oS_EventRange() throws RecognitionException {
@@ -884,6 +920,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOS_time_instant(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOS_time_instant(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OS_time_instantContext oS_time_instant() throws RecognitionException {
@@ -933,6 +974,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Cypher(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Cypher(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_CypherContext oC_Cypher() throws RecognitionException {
@@ -977,6 +1023,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOS_R2R(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOS_R2R(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1058,6 +1109,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Statement(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Statement(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_StatementContext oC_Statement() throws RecognitionException {
@@ -1099,6 +1155,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Query(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Query(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1161,6 +1222,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_RegularQuery(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_RegularQuery(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1234,6 +1300,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Union(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Union(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1323,6 +1394,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_SingleQuery(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_SingleQuery(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_SingleQueryContext oC_SingleQuery() throws RecognitionException {
@@ -1390,6 +1466,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_SinglePartQuery(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_SinglePartQuery(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1565,6 +1646,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_MultiPartQuery(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_MultiPartQuery(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_MultiPartQueryContext oC_MultiPartQuery() throws RecognitionException {
@@ -1696,6 +1782,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_UpdatingClause(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_UpdatingClause(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_UpdatingClauseContext oC_UpdatingClause() throws RecognitionException {
@@ -1778,6 +1869,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_ReadingClause(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_ReadingClause(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_ReadingClauseContext oC_ReadingClause() throws RecognitionException {
@@ -1848,6 +1944,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Match(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Match(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1942,6 +2043,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Unwind(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Unwind(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_UnwindContext oC_Unwind() throws RecognitionException {
@@ -2012,6 +2118,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Merge(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Merge(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2091,6 +2202,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_MergeAction(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_MergeAction(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_MergeActionContext oC_MergeAction() throws RecognitionException {
@@ -2165,6 +2281,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Create(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Create(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_CreateContext oC_Create() throws RecognitionException {
@@ -2221,6 +2342,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Set(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Set(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2302,6 +2428,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_SetItem(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_SetItem(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2471,6 +2602,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Delete(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Delete(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_DeleteContext oC_Delete() throws RecognitionException {
@@ -2582,6 +2718,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Remove(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Remove(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_RemoveContext oC_Remove() throws RecognitionException {
@@ -2671,6 +2812,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_RemoveItem(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_RemoveItem(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_RemoveItemContext oC_RemoveItem() throws RecognitionException {
@@ -2735,6 +2881,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_InQueryCall(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_InQueryCall(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2815,6 +2966,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_StandaloneCall(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_StandaloneCall(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2898,6 +3054,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_YieldItems(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_YieldItems(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -3032,6 +3193,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_YieldItem(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_YieldItem(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_YieldItemContext oC_YieldItem() throws RecognitionException {
@@ -3091,6 +3257,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_With(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_With(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -3155,6 +3326,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Return(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Return(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_ReturnContext oC_Return() throws RecognitionException {
@@ -3209,6 +3385,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_ProjectionBody(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_ProjectionBody(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -3314,6 +3495,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_ProjectionItems(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_ProjectionItems(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -3486,6 +3672,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_ProjectionItem(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_ProjectionItem(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_ProjectionItemContext oC_ProjectionItem() throws RecognitionException {
@@ -3556,6 +3747,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Order(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Order(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -3633,6 +3829,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Skip(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Skip(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_SkipContext oC_Skip() throws RecognitionException {
@@ -3677,6 +3878,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Limit(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Limit(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -3725,6 +3931,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_SortItem(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_SortItem(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -3796,6 +4007,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Where(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Where(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_WhereContext oC_Where() throws RecognitionException {
@@ -3845,6 +4061,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Pattern(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Pattern(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -3931,6 +4152,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_PatternPart(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_PatternPart(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -4021,6 +4247,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_AnonymousPatternPart(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_AnonymousPatternPart(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_AnonymousPatternPartContext oC_AnonymousPatternPart() throws RecognitionException {
@@ -4072,6 +4303,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_PatternElement(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_PatternElement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -4170,6 +4406,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_NodePattern(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_NodePattern(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -4287,6 +4528,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_PatternElementChain(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_PatternElementChain(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_PatternElementChainContext oC_PatternElementChain() throws RecognitionException {
@@ -4354,6 +4600,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_RelationshipPattern(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_RelationshipPattern(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -4619,6 +4870,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_RelationshipDetail(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_RelationshipDetail(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_RelationshipDetailContext oC_RelationshipDetail() throws RecognitionException {
@@ -4744,6 +5000,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Properties(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Properties(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_PropertiesContext oC_Properties() throws RecognitionException {
@@ -4804,6 +5065,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_RelationshipTypes(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_RelationshipTypes(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -4913,6 +5179,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_NodeLabels(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_NodeLabels(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_NodeLabelsContext oC_NodeLabels() throws RecognitionException {
@@ -4981,6 +5252,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_NodeLabel(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_NodeLabel(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_NodeLabelContext oC_NodeLabel() throws RecognitionException {
@@ -5039,6 +5315,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_RangeLiteral(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_RangeLiteral(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -5150,6 +5431,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_LabelName(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_LabelName(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_LabelNameContext oC_LabelName() throws RecognitionException {
@@ -5189,6 +5475,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_RelTypeName(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_RelTypeName(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_RelTypeNameContext oC_RelTypeName() throws RecognitionException {
@@ -5227,6 +5518,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Expression(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Expression(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -5277,6 +5573,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_OrExpression(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_OrExpression(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -5351,6 +5652,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_XorExpression(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_XorExpression(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_XorExpressionContext oC_XorExpression() throws RecognitionException {
@@ -5424,6 +5730,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_AndExpression(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_AndExpression(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_AndExpressionContext oC_AndExpression() throws RecognitionException {
@@ -5493,6 +5804,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_NotExpression(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_NotExpression(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -5568,6 +5884,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_ComparisonExpression(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_ComparisonExpression(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_ComparisonExpressionContext oC_ComparisonExpression() throws RecognitionException {
@@ -5641,6 +5962,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_AddOrSubtractExpression(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_AddOrSubtractExpression(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -5765,6 +6091,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_MultiplyDivideModuloExpression(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_MultiplyDivideModuloExpression(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -5920,6 +6251,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_PowerOfExpression(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_PowerOfExpression(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_PowerOfExpressionContext oC_PowerOfExpression() throws RecognitionException {
@@ -6002,6 +6338,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_UnaryAddOrSubtractExpression(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_UnaryAddOrSubtractExpression(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -6093,6 +6434,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_StringListNullOperatorExpression(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_StringListNullOperatorExpression(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_StringListNullOperatorExpressionContext oC_StringListNullOperatorExpression() throws RecognitionException {
@@ -6177,6 +6523,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_ListOperatorExpression(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_ListOperatorExpression(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -6314,6 +6665,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_StringOperatorExpression(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_StringOperatorExpression(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_StringOperatorExpressionContext oC_StringOperatorExpression() throws RecognitionException {
@@ -6410,6 +6766,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_NullOperatorExpression(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_NullOperatorExpression(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_NullOperatorExpressionContext oC_NullOperatorExpression() throws RecognitionException {
@@ -6494,6 +6855,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_PropertyOrLabelsExpression(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_PropertyOrLabelsExpression(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -6617,6 +6983,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Atom(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Atom(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -6956,6 +7327,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Literal(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Literal(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_LiteralContext oC_Literal() throws RecognitionException {
@@ -7042,6 +7418,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_BooleanLiteral(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_BooleanLiteral(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_BooleanLiteralContext oC_BooleanLiteral() throws RecognitionException {
@@ -7096,6 +7477,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_ListLiteral(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_ListLiteral(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -7205,6 +7591,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_PartialComparisonExpression(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_PartialComparisonExpression(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -7377,6 +7768,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_ParenthesizedExpression(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_ParenthesizedExpression(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_ParenthesizedExpressionContext oC_ParenthesizedExpression() throws RecognitionException {
@@ -7450,6 +7846,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_RelationshipsPattern(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_RelationshipsPattern(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -7526,6 +7927,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_FilterExpression(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_FilterExpression(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_FilterExpressionContext oC_FilterExpression() throws RecognitionException {
@@ -7594,6 +8000,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_IdInColl(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_IdInColl(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_IdInCollContext oC_IdInColl() throws RecognitionException {
@@ -7651,6 +8062,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_FunctionInvocation(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_FunctionInvocation(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -7796,6 +8212,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_FunctionName(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_FunctionName(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_FunctionNameContext oC_FunctionName() throws RecognitionException {
@@ -7871,6 +8292,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_ExplicitProcedureInvocation(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_ExplicitProcedureInvocation(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -7992,6 +8418,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_ImplicitProcedureInvocation(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_ImplicitProcedureInvocation(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_ImplicitProcedureInvocationContext oC_ImplicitProcedureInvocation() throws RecognitionException {
@@ -8030,6 +8461,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_ProcedureResultField(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_ProcedureResultField(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -8072,6 +8508,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_ProcedureName(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_ProcedureName(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -8116,6 +8557,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Namespace(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Namespace(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -8179,6 +8625,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_ListComprehension(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_ListComprehension(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -8289,6 +8740,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_PatternComprehension(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_PatternComprehension(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -8443,6 +8899,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_PropertyLookup(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_PropertyLookup(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_PropertyLookupContext oC_PropertyLookup() throws RecognitionException {
@@ -8512,6 +8973,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_CaseExpression(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_CaseExpression(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -8697,6 +9163,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_CaseAlternatives(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_CaseAlternatives(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_CaseAlternativesContext oC_CaseAlternatives() throws RecognitionException {
@@ -8773,6 +9244,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Variable(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Variable(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_VariableContext oC_Variable() throws RecognitionException {
@@ -8814,6 +9290,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_NumberLiteral(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_NumberLiteral(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -8884,6 +9365,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_MapLiteral(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_MapLiteral(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -9042,6 +9528,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Parameter(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Parameter(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_ParameterContext oC_Parameter() throws RecognitionException {
@@ -9117,6 +9608,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_PropertyExpression(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_PropertyExpression(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_PropertyExpressionContext oC_PropertyExpression() throws RecognitionException {
@@ -9188,6 +9684,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_PropertyKeyName(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_PropertyKeyName(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_PropertyKeyNameContext oC_PropertyKeyName() throws RecognitionException {
@@ -9226,6 +9727,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_IntegerLiteral(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_IntegerLiteral(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -9273,6 +9779,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_DoubleLiteral(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_DoubleLiteral(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -9324,6 +9835,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_SchemaName(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_SchemaName(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -9489,6 +10005,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_ReservedWord(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_ReservedWord(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_ReservedWordContext oC_ReservedWord() throws RecognitionException {
@@ -9543,6 +10064,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_SymbolicName(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_SymbolicName(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_SymbolicNameContext oC_SymbolicName() throws RecognitionException {
@@ -9587,6 +10113,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_LeftArrowHead(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_LeftArrowHead(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -9633,6 +10164,11 @@ public class SeraphParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_RightArrowHead(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_RightArrowHead(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final OC_RightArrowHeadContext oC_RightArrowHead() throws RecognitionException {
@@ -9677,6 +10213,11 @@ public class SeraphParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof SeraphListener ) ((SeraphListener)listener).exitOC_Dash(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof SeraphVisitor ) return ((SeraphVisitor<? extends T>)visitor).visitOC_Dash(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 

@@ -1,4 +1,5 @@
 // Generated from Seraph.g4 by ANTLR 4.7.2
+package org.seraph.syntax;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
