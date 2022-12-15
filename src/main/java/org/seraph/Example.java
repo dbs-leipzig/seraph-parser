@@ -11,12 +11,8 @@ import org.seraph.syntax.SeraphVisitorImpl;
 public class Example {
   public static void main(String[] args) {
 
-    String seraphQuery = "REGISTER QUERY x STARTING AT { " +
-      "MATCH (a)-[x]->(b) WITHIN PT1H " +
-      "EMIT a, x, b " +
-      "ON SNAPSHOT " +
-      "EVERY PT10M " +
-      "}";
+    String seraphQuery = "REGISTER QUERY <x> STARTING AT 2019-09-07T15:50:30.022+01:00 { " +
+            "MATCH (a) --> (b) WITHIN PT1H MATCH (c) --> (d) WITHIN PT1H RETURN * ON EXIT EVERY PT10M}";
 
     SeraphLexer seraphLexer = new SeraphLexer(CharStreams.fromString(seraphQuery));
     CommonTokenStream tokens = new CommonTokenStream(seraphLexer);
