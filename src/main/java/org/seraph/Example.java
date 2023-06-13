@@ -17,7 +17,7 @@ public class Example {
 
     String seraphQuery = "REGISTER QUERY <x> STARTING AT 2019-09-07T15:50:30.022+01:00 {" +
             "            MATCH (a) --> (b) --> (c) WITHIN PT1H WHERE a > b  OR a = 0 OR a = 0 MATCH (a) --> (b) --> (c) " +
-            "            WITHIN PT1H UNWIND expr As A WITH ret WHERE a > b MATCH (a) --> (b) --> (c) WITHIN PT1H WHERE a > b RETURN * ON EXIT EVERY PT10M}";
+            "            WITHIN PT1H UNWIND expr As A WITH ret WHERE a > b MATCH (a) --> (b) --> (c) WITHIN PT1H WHERE a > b RETURN * ON EXIT EVERY PT10M }";
 
     SeraphLexer seraphLexer = new SeraphLexer(CharStreams.fromString(seraphQuery));
     CommonTokenStream tokens = new CommonTokenStream(seraphLexer);

@@ -18,7 +18,7 @@ public class SeraphVisitorImpl extends SeraphBaseVisitor<ContinuousQuery> {
     public ContinuousQuery visitOC_Seraph(SeraphParser.OC_SeraphContext ctx) {
         query.setId(ctx.id.getText());
         query.setStartTime(getISO8601AsDate(ctx.ISO8601_DATE_TIME().getText()));
-        query.setDuration(ctx.oS_Duration().Duration().getText());
+        query.setDuration(ctx.ISO8601_DURATION().getText());
         visitOC_Statement(ctx.oC_Statement());
         visitOS_StreamOp(ctx.oS_StreamOp());
         return query;
@@ -78,7 +78,7 @@ public class SeraphVisitorImpl extends SeraphBaseVisitor<ContinuousQuery> {
     @Override
     public ContinuousQuery visitOC_Match(SeraphParser.OC_MatchContext ctx) {
         MatchClause matchClause;
-        String duration = ctx.oS_Duration().Duration().getText();
+        String duration = ctx.ISO8601_DURATION().getText();
         String pattern = "";
         List<SeraphParser.OC_PatternPartContext> patternPartContexts = ctx.oC_Pattern()
                 .oC_PatternPart();
