@@ -18,7 +18,7 @@ public class SeraphVisitorImpl extends SeraphBaseVisitor<ContinuousQuery> {
     public ContinuousQuery visitOC_Seraph(SeraphParser.OC_SeraphContext ctx) {
         query.setId(ctx.id.getText());
         query.setStartTime(getISO8601AsDate(ctx.ISO8601_DATE_TIME().getText()));
-        query.setDuration(ctx.ISO8601_DURATION().getText());
+        query.setDuration(ctx.range.getText());
         visitOC_Statement(ctx.oC_Statement());
         visitOS_StreamOp(ctx.oS_StreamOp());
         return query;
