@@ -8,8 +8,8 @@ import org.seraph.syntax.SeraphLexer;
 import org.seraph.syntax.SeraphParser;
 import org.seraph.syntax.SeraphVisitorImpl;
 
-public class QueryFactory {
-    public static ContinuousQuery parse(String queryString) {
+public interface QueryFactory {
+    static ContinuousQuery parse(String queryString) {
         SeraphLexer seraphLexer = new SeraphLexer(CharStreams.fromString(queryString));
         CommonTokenStream tokens = new CommonTokenStream(seraphLexer);
         SeraphParser parser = new SeraphParser(tokens);
